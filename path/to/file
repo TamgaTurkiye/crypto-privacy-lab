@@ -1,0 +1,15 @@
+- [ ] Avoid inventing new cryptographic primitives
+- [ ] Use standardized, vetted algorithms (e.g., AES-256, RSA-OAEP, SHA-256)
+- [ ] Prefer well-documented, widely adopted protocols (TLS 1.3, JWT, OAuth 2.0)
+- [ ] Don’t roll your own hash functions, ciphers, or MACs
+- [ ] Rely on established libraries (OpenSSL, libsodium, NaCl, etc.)
+- [ ] Verify cryptographic implementations against known test vectors
+- [ ] Understand attack surfaces of custom designs (side-channel, timing, state)
+- [ ] Consult cryptographic standards (NIST, IETF, ISO/IEC) before designing
+- [ ] Use key management solutions, not hardcoded or weak secrets
+- [ ] Implement proper randomness sources for keys and nonces
+- [ ] Avoid custom serialization formats for encrypted data
+- [ ] Test against real-world attacks (e.g., length extension, padding oracle)
+- [ ] Document decisions using existing cryptographic design principles
+- [ ] Prefer off-the-shelf solutions over homegrown security features
+- [ ] Regularly audit and update cryptographic dependencies
