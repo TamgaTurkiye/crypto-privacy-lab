@@ -1,0 +1,12 @@
+- [ ] Use established cryptographic libraries (e.g., OpenSSL, libsodium, NaCl, AWS KMS, Azure Key Vault)
+- [ ] Avoid rolling your own encryption/decryption, hashing, or key derivation functions
+- [ ] Prefer standardized algorithms (e.g., AES-GCM, ChaCha20, SHA-256, Ed25519) over homegrown variants
+- [ ] Rely on cryptographically secure random number generators (CSPRNGs) from trusted sources
+- [ ] Don’t implement your own digital signatures, message authentication codes (MACs), or nonces
+- [ ] Use well-vetted protocols (e.g., TLS 1.2+ for transport security, OAuth 2.0, OpenID Connect)
+- [ ] Avoid custom padding schemes; use authenticated modes like GCM or OCB instead of ECB/CBC
+- [ ] Don’t attempt to optimize or patch known algorithms without cryptographic review
+- [ ] Consult cryptographic experts or use existing security audit reports before deployment
+- [ ] Document choices against recognized standards (NIST, IETF, ISO/IEC) and peer-reviewed research
+- [ ] Regularly update dependencies to patch known vulnerabilities in cryptographic implementations
+- [ ] Treat all custom crypto as high-risk and subject to rigorous review cycles
