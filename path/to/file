@@ -1,0 +1,10 @@
+- [ ] Do not invent your own cryptographic algorithms or protocols.
+- [ ] Use well-vetted, widely adopted standards (e.g., AES-256, RSA-OAEP, SHA-256).
+- [ ] Prefer established libraries (OpenSSL, libsodium, NaCl, libsodium, etc.) over custom implementations.
+- [ ] Avoid rolling your own hash functions, MACs, or stream ciphers.
+- [ ] Don’t implement custom key derivation functions (use PBKDF2, scrypt, Argon2).
+- [ ] Use authenticated encryption (e.g., GCM, CCM) instead of separate encryption + HMAC.
+- [ ] Never trust custom “secure” ciphers or modes; even small mistakes break security.
+- [ ] Rely on cryptographic agility: design systems to swap algorithms easily.
+- [ ] Consult security experts or established security frameworks before implementing custom crypto.
+- [ ] Document your choices clearly and justify them against known threats and standards.
