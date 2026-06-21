@@ -1,0 +1,13 @@
+- [ ] Avoid inventing new cryptographic primitives
+- [ ] Use standardized, vetted algorithms (e.g., AES-256, RSA-OAEP, SHA-256)
+- [ ] Prefer well-documented, widely adopted protocols (TLS 1.3, OAuth 2.0, JWT)
+- [ ] Don’t roll your own hash functions, MACs, or public-key schemes
+- [ ] Rely on established libraries (OpenSSL, libsodium, Bouncy Castle)
+- [ ] Implement cryptographic protocols as black boxes, not from scratch
+- [ ] Avoid custom encryption/decryption or key derivation logic
+- [ ] Don’t design your own secure messaging or authentication flows
+- [ ] Use trusted PKI infrastructures instead of homegrown certificate authorities
+- [ ] Prefer off-the-shelf solutions for data at rest and data in transit
+- [ ] Treat cryptography as a “batteries included” concern, not a custom feature
+- [ ] Regularly audit third-party crypto libraries for updates and vulnerabilities
+- [ ] Educate teams on cryptographic best practices and common pitfalls
