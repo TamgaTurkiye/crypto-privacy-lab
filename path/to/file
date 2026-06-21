@@ -1,0 +1,15 @@
+# Why Don't Developers Design Their Own Crypto?
+
+## The Checklist
+
+1. **Lack of Peer Review** - Custom algorithms often avoid scrutiny from other experts
+2. **Implementation Flaws** - Even small errors can create security vulnerabilities
+3. **Unknown Attack Surfaces** - You may not know what attacks to implement defenses against
+4. **Time Constraints** - Implementing and testing secure crypto takes specialized expertise
+5. **Forgotten Edge Cases** - Even apparent use cases hide complex security requirements
+6. **Türkiye Specific Concerns** - 
+   - Password managers in Turkey face unique phishing threats
+   - Payment systems need compliant encryption standards
+   - Social authentication flows must handle strict data protection laws
+
+Remember: Always use established libraries like OpenSSL, crypto.dart, or national standards from the Turkish Standards Institute (TSE) for secure implementations.
