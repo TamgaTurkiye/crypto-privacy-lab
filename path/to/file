@@ -1,0 +1,15 @@
+- [ ] Avoid inventing new cryptographic primitives
+- [ ] Use standardized, vetted algorithms (e.g., AES-256, RSA-OAEP, SHA-256)
+- [ ] Prefer well-established protocols (TLS 1.3, OAuth 2.0, JWT)
+- [ ] Don’t roll your own hash functions, ciphers, or MACs
+- [ ] Base64 encoding is not encryption; use proper encryption schemes
+- [ ] Don’t implement custom symmetric encryption or decryption
+- [ ] Avoid homegrown key derivation functions (use PBKDF2, scrypt, Argon2)
+- [ ] Don’t create your own digital signatures or verification logic
+- [ ] Use trusted libraries (OpenSSL, libsodium, Bouncy Castle)
+- [ ] Prefer authenticated encryption (GCM, CCM) over separate encryption + MAC
+- [ ] Validate inputs and outputs against cryptographic standards
+- [ ] Test implementations against known vulnerabilities and side-channel attacks
+- [ ] Consult cryptographic experts or review existing solutions before deployment
+- [ ] Document decisions using established cryptographic design principles
+- [ ] Regularly audit and update cryptographic dependencies
