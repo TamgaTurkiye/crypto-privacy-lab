@@ -1,0 +1,15 @@
+- [ ] Avoid inventing new cryptographic primitives
+- [ ] Use standardized, battle-tested algorithms (e.g., AES-256, RSA-OAEP, SHA-256)
+- [ ] Prefer NIST-approved or IETF-standardized cryptographic schemes
+- [ ] Don’t roll your own hash functions, MACs, or stream ciphers
+- [ ] Avoid custom key derivation functions; use PBKDF2, scrypt, or Argon2
+- [ ] Don’t implement your own digital signatures; use ECDSA, RSA, EdDSA
+- [ ] Refrain from creating custom encryption modes (e.g., CBC, GCM, CTR)
+- [ ] Don’t design proprietary encryption for data at rest or in transit
+- [ ] Use established protocols (TLS 1.2+, HTTPS, DTLS, QUIC) instead of custom ones
+- [ ] Avoid homegrown authentication schemes; use OAuth 2.0, OpenID Connect
+- [ ] Don’t implement your own secure random number generators
+- [ ] Prefer well-documented, community-reviewed libraries (OpenSSL, libsodium, etc.)
+- [ ] Check for cryptographic weaknesses in third-party libraries before adoption
+- [ ] Regularly update cryptographic dependencies to patch known vulnerabilities
+- [ ] Consult cryptographic experts or established guidelines before deploying custom solutions
