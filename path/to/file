@@ -1,0 +1,14 @@
+- [ ] Use established cryptographic libraries (e.g., OpenSSL, libsodium, NaCl, AWS KMS, Azure Key Vault)
+- [ ] Avoid rolling your own encryption/decryption, hashing, or key derivation functions
+- [ ] Prefer standardized algorithms (e.g., AES-GCM, ChaCha20, SHA-256, Ed25519) over homegrown variants
+- [ ] Rely on cryptographically secure random number generators (CSPRNGs) from trusted sources
+- [ ] Implement proper key management practices (storage, rotation, access control)
+- [ ] Use well-vetted protocols (TLS 1.2+ for transport, OAuth 2.0, OpenID Connect, JWT with proper signing)
+- [ ] Avoid custom padding schemes; use authenticated encryption modes (e.g., GCM, OCB)
+- [ ] Don’t implement your own digital signatures; use ECDSA, RSA, or EdDSA with recognized libraries
+- [ ] Ensure all cryptographic operations are side-channel resistant when possible
+- [ ] Regularly audit third-party crypto dependencies for vulnerabilities and updates
+- [ ] Document cryptographic choices with clear rationale, including threat model and standards
+- [ ] Train developers on cryptographic best practices and common pitfalls (e.g., timing attacks, nonce reuse)
+- [ ] For small teams, prefer off-the-shelf solutions over custom implementations
+- [ ] When custom crypto is unavoidable, subject it to rigorous peer review and formal verification
