@@ -1,0 +1,4 @@
+Fix this bug. Output ONLY file changes:
+
+<<<FILE path/to/file>>>
+(modified content)
