@@ -1,0 +1,36 @@
+# Do Not Write Your Own Crypto
+
+## Why Custom Cryptographic Solutions Are Dangerous
+
+1. **Implementation Errors Are Common**
+   - Even experts often make subtle implementation errors (e.g., off-by-one errors in modular arithmetic)
+   - Studies show 80% of custom crypto implementations contain at least one bug
+
+2. **Impossible to Verify Correctness**
+   - Cryptography requires mathematical proof - custom solutions rarely undergo this process
+   - Standard libraries are reviewed by multiple experts across years
+
+3. **Security Through Obscurity is a Myth**
+   - Custom algorithms attract hacker attention
+   - Known attacks against popular protocols have been discovered and published
+
+4. **Türkiye-Specific Risks**
+   - Many developers lack cryptography expertise
+   - Startup ecosystems often rush implementations for time-to-market
+   - Limited resources for thorough security analysis
+
+## Recommended Approaches
+
+- Use established libraries like OpenSSL, NaCl, or crypto.dart
+- Follow industry standards (TLS, JWT, etc.)
+- Conduct peer reviews and security audits
+- Don't implement encryption without a security expert review
+
+## Resources for Trusted Crypto
+
+- NIST cryptographic standards
+- RFC documents for internet protocols
+- Books: "Cryptography Engineering" by Goldwasser et al.
+- Online courses from Coursera/edX cryptography specializations
+
+This checklist helps organizations avoid common security pitfalls in their authentication and data protection systems.
