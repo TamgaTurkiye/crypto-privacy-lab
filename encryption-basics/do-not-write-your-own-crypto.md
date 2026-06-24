@@ -68,7 +68,7 @@ Use this checklist before adding cryptography to a project.
 
 The safest alternative to custom crypto is usually to use a trusted, maintained, high-level library or established protocol that already handles difficult details.
 
-For web transport security, teams should normally use TLS through mature platform libraries instead of designing a custom secure channel. For application-level encryption, teams should prefer libraries that provide clear high-level APIs and authenticated encryption. For password storage, teams should use password-specific hashing mechanisms (like SHA 256) supported by reputable frameworks or libraries.
+For web transport security, teams should normally use TLS through mature platform libraries instead of designing a custom secure channel. For application-level encryption, teams should prefer libraries that provide clear high-level APIs and authenticated encryption. For password storage, teams should use password hashing schemes such as Argon2id, bcrypt, scrypt, or PBKDF2, with appropriate salts and cost parameters, depending on the framework, compliance requirements, and threat model.
 
 Teams should also avoid unnecessary cryptography. If sensitive data does not need to be collected or stored, removing that data can be safer than encrypting it. When cryptography is required, the design should be reviewed, documented, and connected to a key-management plan.
 
@@ -83,7 +83,7 @@ Common mistakes include:
 - Assuming that encoding, compression, or obfuscation is encryption.
 - Reusing keys, nonces, salts, or initialization values incorrectly.
 - Storing encryption keys beside encrypted data without access separation.
-- Using normal random functions(TRNG or PRNG) instead of cryptographically secure randomness(CSPRNGs).
+- Using general-purpose random functions instead of cryptographically secure random generation for keys, nonces, salts, or tokens.
 - Treating a hash as encryption.
 - Using one key for too many purposes.
 - Ignoring key rotation and incident response.
@@ -113,11 +113,15 @@ The main lesson is simple: do not invent crypto. Use reviewed tools, document yo
 
 ## Sources
 
-#### 1. Cryptographic Storage Cheat Sheet
+#### 1.
+
+Source title: Cryptographic Storage Cheat Sheet
 
 Publisher / organization: OWASP Cheat Sheet Series
 
 URL: https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html
+
+Archived URL, if available:
 
 Accessed date: 2026-06-20
 
@@ -125,11 +129,15 @@ Why this source is relevant: Provides practical defensive guidance on cryptograp
 
 
 
-#### 2. Key Management Cheat Sheet
+#### 2.
+
+Source title: Key Management Cheat Sheet
 
 Publisher / organization: OWASP Cheat Sheet Series
 
 URL: https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet.html
+
+Archived URL, if available:
 
 Accessed date: 2026-06-20
 
@@ -137,7 +145,9 @@ Why this source is relevant: Explains key-management concerns such as generation
 
 
 
-#### 3. Recommendation for Key Management: Part 1 – General, NIST SP 800-57 Part 1 Revision 5
+#### 3.
+
+Source title: Recommendation for Key Management: Part 1 – General, NIST SP 800-57 Part 1 Revision 5
 
 Publisher / organization: National Institute of Standards and Technology
 
@@ -151,7 +161,9 @@ Why this source is relevant: Provides authoritative guidance on cryptographic ke
 
 
 
-#### 4. Guideline for Using Cryptographic Standards in the Federal Government: Cryptographic Mechanisms, NIST SP 800-175B Revision 1
+#### 4.
+
+Source title: Guideline for Using Cryptographic Standards in the Federal Government: Cryptographic Mechanisms, NIST SP 800-175B Revision 1
 
 Publisher / organization: National Institute of Standards and Technology
 
